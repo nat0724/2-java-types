@@ -6,10 +6,10 @@ public class Task04 {
 
     public static float calculate(int a, int b, String operation) {
 
-        if (operation == "+") return a+b;
-        if (operation == "-") return a-b;
-        if (operation == "*") return a*b;
-        if (operation == "/") return (float) a /b;
+        if (Objects.equals(operation, "+")) return a+b;
+        if (Objects.equals(operation, "-")) return a-b;
+        if (Objects.equals(operation, "*")) return a*b;
+        if (Objects.equals(operation, "/")) return (float) a /b;
 
 
         return 0;
